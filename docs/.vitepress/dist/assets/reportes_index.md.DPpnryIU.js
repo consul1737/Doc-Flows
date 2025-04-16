@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./chunks/framework.tuuL-SzM.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"reportes/index.md","filePath":"reportes/index.md"}'),a={name:"reportes/index.md"};function o(n,s,c,d,i,p){return r(),t("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};

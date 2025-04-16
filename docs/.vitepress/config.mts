@@ -54,7 +54,8 @@ function sidebarFlows(): DefaultTheme.SidebarItem[] {
       text: "Flows",
       collapsed: false,
       items: [
-        { text: "Inicio", link: "/" }
+        { text: "Inicio", link: "/" },
+        
       ]
     }
   ];

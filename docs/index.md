@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Flows Manager"
   text: "Documentacion "
-  tagline: My great project tagline
+  tagline:
   actions:
     - theme: brand
       text: Flows
