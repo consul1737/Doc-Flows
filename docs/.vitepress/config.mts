@@ -2,7 +2,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/Doc-Flows/'
+  base: '/Doc-Flows/',
   title: "flows Manager",
   description: "Prueba ",
   themeConfig: {
