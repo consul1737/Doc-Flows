@@ -4,7 +4,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 export default defineConfig({
   base: '/Doc-Flows/',
   title: "flows Manager",
-  description: "Prueba ",
+  description: "Prueba",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -19,7 +19,25 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+    lastUpdated: {
+      text: 'Ultima actualizacion',
+      formatOptions: {
+        dateStyle: 'short',
+
+      }
+    },
+    docFooter: {
+      prev: 'Anterior',
+      next: 'Siguiente'
+    },
+    outline: {
+      level: 'deep',
+      label: 'En esta página'
+    },
+    search: {
+      provider: "local",
+    }
   }
 })
 
@@ -56,7 +74,7 @@ function sidebarFlows(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: "Inicio", link: "/" },
-        
+
       ]
     }
   ];
