@@ -14,6 +14,10 @@ hero:
       text: Reportes
       link: /reportes/index.md
 
+  image:
+    src: /descarga1.png
+    alt: VitePress
+
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
