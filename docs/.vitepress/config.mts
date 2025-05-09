@@ -67,7 +67,7 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
             },
             {
               text: "Sueldos",
-              link: "/reportes/manual_usuario_rhsueldos",
+              link: "/reportes/manual_usuario_rhsueldos/",
             },
           ],
         },
@@ -85,7 +85,7 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
             },
             {
               text: "Sueldos",
-              link: "/reportes/jasper_report_doc",
+              link: "/reportes/jasper_report_doc/",
             },
           ],
         },

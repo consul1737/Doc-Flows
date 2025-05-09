@@ -21,4 +21,4 @@
 ## 🛠️ Manual Técnico
 
 - ⏱️ [Control de tiempos / Tareas (Técnico)](ControlTiempo_Tecnico)
-- 💼 [Sueldos (Técnico)](jasper_report_rhsueldos.md)
+- 💼 [Sueldos (Técnico)](jasper_report_doc.md)
