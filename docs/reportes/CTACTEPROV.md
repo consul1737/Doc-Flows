@@ -164,7 +164,7 @@ Disponible en formatos:
 Para asistencia contactar a:  
 ✉️ **soporte@flowsma.com**  
 ☎️ +54 9 353 474-6217 <br>
-📩 [`Ingresa al formulario`](https://surl.li/kmiuwb)
+📩 [Ingresa al formulario](https://surl.li/kmiuwb)
 
 ### Tips útiles para pedir ayuda:
 

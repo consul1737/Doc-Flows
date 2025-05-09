@@ -101,21 +101,21 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
           ]
         }
         , 
-        {
-          text: "Cuentas",
-          collapsed: true,
-          items: [
-            {
-              text: "Control de cuentas",
-              collapsed: true,
-              items: [
-                { text: "Para el Usuario", link: "/reportes/CTACTEPROV/" },
-                { text: "Documentación Técnica", link: "/reportes/CTACTEPROV/" }
-              ]
-            }
-          ]
-        }
-        ,
+        // {
+        //   text: "Cuentas",
+        //   collapsed: true,
+        //   items: [
+        //     {
+        //       text: "Control de cuentas",
+        //       collapsed: true,
+        //       items: [
+        //         { text: "Para el Usuario", link: "/reportes/CTACTEPROV/" },
+        //         { text: "Documentación Técnica", link: "/reportes/CTACTEPROV/" }
+        //       ]
+        //     }
+        //   ]
+        // }
+        // ,
         {
           text: "Sueldos",
           collapsed: true,
