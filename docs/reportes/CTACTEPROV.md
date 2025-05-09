@@ -107,7 +107,7 @@ Disponible en formatos:
 
 ### 2. **¿Cómo interpretar saldos negativos?**
 
-- Un saldo en **rojo** (![#FFCDD2](#)) significa que el cliente tiene:
+- Un saldo en **rojo** (<span style="color:#FFCDD2">■</span>) significa que el cliente tiene:
   - **Deuda pendiente** (si es proveedor).
   - **Anticipo/pago excedente** (si es empleado).
 
@@ -118,15 +118,15 @@ Disponible en formatos:
 ### 4. **¿Se puede modificar el orden de las columnas?**
 
 - No directamente en el reporte. Si necesitas un orden personalizado:
-  1.  Exporta a Excel.
-  2.  Reordena las columnas manualmente.
+  1. Exporta a Excel.
+  2. Reordena las columnas manualmente.
 
 ### 5. **¿Qué hago si los totales no coinciden con mis registros?**
 
 - **Pasos para diagnosticar**:
-  1.  Verifica que los IDs de categoría (`735, 736, 852, 853`) estén correctamente asignados en la base de datos.
-  2.  Confirma que no haya filtros aplicados accidentalmente.
-  3.  Compara con el **detalle de movimientos** (no solo los totales).
+  1. Verifica que los IDs de categoría (`735, 736, 852, 853`) estén correctamente asignados en la base de datos.
+  2. Confirma que no haya filtros aplicados accidentalmente.
+  3. Compara con el **detalle de movimientos** (no solo los totales).
 
 ### 6. **¿Cómo exportar solo movimientos específicos?**
 
@@ -162,11 +162,11 @@ Disponible en formatos:
 ## 📞 **Soporte**
 
 Para asistencia contactar a:  
-✉️ **soporte@flowsma.com**  
+✉️ **<soporte@flowsma.com>**  
 ☎️ +54 9 353 474-6217 <br>
 📩 [Ingresa al formulario](https://surl.li/kmiuwb)
 
-### Tips útiles para pedir ayuda:
+### Tips útiles para pedir ayuda
 
 - 📸 Capturas de pantalla de errores o filtros usados
 - 📅 Especificar rangos de fecha y tipo de reporte
