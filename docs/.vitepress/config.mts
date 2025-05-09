@@ -62,6 +62,83 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
             }
           ]
         }
+        ,
+        {
+          text: "Compras",
+          collapsed: true,
+          items: [
+            {
+              text: "Control de compras",
+              collapsed: true,
+              items: [
+                { text: "Para el Usuario", link: "/reportes/COMPRAS_maestro/" },
+                { text: "Documentación Técnica", link: "/reportes/COMPRAS_maestro/" }
+              ]
+            },
+            {
+              text: "RemitosVSCompras",
+              collapsed: true,
+              items: [
+                { text: "Para el Usuario", link: "/reportes/RemitosVsCompras" },
+                { text: "Documentación Técnica", link: "/reportes/RemitosVsCompras" }
+              ]
+            }
+          ]
+
+        },
+        {
+          text: "Cheques",
+          collapsed: true,
+          items: [
+            {
+              text: "Control de cheques",
+              collapsed: true,
+              items: [
+                { text: "Para el Usuario", link: "/reportes/Cheques/" },
+                { text: "Documentación Técnica", link: "/reportes/Cheques/" }
+              ]
+            }
+          ]
+        }
+        , 
+        {
+          text: "Cuentas",
+          collapsed: true,
+          items: [
+            {
+              text: "Control de cuentas",
+              collapsed: true,
+              items: [
+                { text: "Para el Usuario", link: "/reportes/CTACTE_PROV" },
+                { text: "Documentación Técnica", link: "/reportes/CTACTE_PROV" }
+              ]
+            }
+          ]
+        }
+        ,
+        {
+          text: "Sueldos",
+          collapsed: true,
+          items: [
+            {
+              text: "RHSUELDOS",
+              collapsed: true,
+              items: [
+                { text: "Para el Usuario", link: "/reportes/manual_usuario_rhsueldos/" },
+                { text: "Documentación Técnica", link: "/reportes/jasper_report_doc/" }
+              ]
+            }
+          ]
+        }
+        ,
+        {
+          text: "Comportamietno de filtros",
+          collapsed: true,
+          items: [
+            {text: "Fechas", link: "/reportes/ComportamientoFiltroFechas/" },
+            { text: "Busqueda parcial", link: "/reportes/BusquedaParcial/" } 
+          ]
+        }
       ]
     }
   ];
