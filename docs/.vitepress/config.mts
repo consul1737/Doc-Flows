@@ -109,8 +109,8 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
               text: "Control de cuentas",
               collapsed: true,
               items: [
-                { text: "Para el Usuario", link: "/reportes/CTACTE_PROV/" },
-                { text: "Documentación Técnica", link: "/reportes/CTACTE_PROV/" }
+                { text: "Para el Usuario", link: "/reportes/CTACTEPROV/" },
+                { text: "Documentación Técnica", link: "/reportes/CTACTEPROV/" }
               ]
             }
           ]
