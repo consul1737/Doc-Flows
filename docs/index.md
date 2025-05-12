@@ -15,7 +15,7 @@ hero:
       link: /reportes/index.md
 
   image:
-    src: /descarga1.png
+    src: /LogoFlows.png
     alt: VitePress
 
 features:
