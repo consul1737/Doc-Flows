@@ -1,41 +1,53 @@
 import { defineConfig, type DefaultTheme } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
-// https://vitepress.dev/reference/site-config
-export default defineConfig({
-  base: "/Doc-Flows/",
-  title: "flows Manager",
-  description: "Prueba",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Home", link: "/" }],
-
-    sidebar: {
-      "/reportes/": sidebarReportes(),
-      "/flows/": sidebarFlows(),
-    },
-
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    ],
-    lastUpdated: {
-      text: "Ultima actualizacion",
-      formatOptions: {
-        dateStyle: "short",
+export default withMermaid(
+  defineConfig({
+    base: "/Doc-Flows/",
+    title: "Flows Manager",
+    description: "Prueba",
+    vite: {
+      optimizeDeps: {
+        include: ["mermaid"],
       },
     },
-    docFooter: {
-      prev: "Anterior",
-      next: "Siguiente",
+
+    themeConfig: {
+      nav: [{ text: "Home", link: "/" }],
+
+      sidebar: {
+        "/reportes/": sidebarReportes(),
+        "/flows/": sidebarFlows(),
+      },
+
+      socialLinks: [
+        { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      ],
+
+      lastUpdated: {
+        text: "Última actualización",
+        formatOptions: {
+          dateStyle: "short",
+        },
+      },
+
+      docFooter: {
+        prev: "Anterior",
+        next: "Siguiente",
+      },
+
+      outline: {
+        level: "deep",
+        label: "En esta página",
+      },
+
+      search: {
+        provider: "local",
+      },
     },
-    outline: {
-      level: "deep",
-      label: "En esta página",
-    },
-    search: {
-      provider: "local",
-    },
-  },
-});
+  })
+);
+// https://vitepress.dev/reference/site-config
 
 function sidebarReportes(): DefaultTheme.SidebarItem[] {
   return [

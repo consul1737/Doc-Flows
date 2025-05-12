@@ -1,3 +1,7 @@
+---
+mermaidTheme: forest
+---
+
 ## 📅 Comportamiento de Fechas
 
 El reporte aplica inteligentemente los rangos de fecha según lo especificado:
@@ -60,5 +64,4 @@ style H fill:#673AB7,stroke:#512DA8,color:white
 
 classDef logic fill:#607D8B,stroke:#455A64,color:white;
 class B,D,F logic;
-
 ```
