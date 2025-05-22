@@ -4,18 +4,33 @@
 
 El reporte **"Detalle de Cisterna"** permite visualizar el historial completo de movimientos de stock de un artículo específico en una cisterna determinada, mostrando el **saldo acumulado en tiempo real**.
 
----
-
 ## 📊 Información que Muestra el Reporte
+
+## ⚙️ Parámetros del Reporte
+
+Para generar el reporte correctamente, se deben completar los siguientes parámetros:
+
+### 🔐 Parámetros Obligatorios
+
+- 1️⃣ **`Combustible`**: ID del artículo a consultar
+
+### 🧩 Parámetros Opcionales
+
+- 2️⃣ **`fechaDesde`**: Fecha de inicio del período
+- 2️⃣ **`fechaHasta`**: Fecha final del período
+- 3️⃣ **`Ordenar`**: Ascendente o Descendente (selección por desplegable)
+- 4️⃣ **`Cantidad de filas`**: Número máximo de registros a mostrar (por defecto: 50).  
+  🔸 _No tiene un límite máximo o mínimo fijo._  
+  🔸 _Si se aplica un filtro por fecha, se mostrarán todos los movimientos correspondientes al rango seleccionado._
+
+![parametroarticuloid](./img/parametros.webp)
 
 ### 🧱 Encabezado del Reporte
 
 - 🛢️ **Nombre de la cisterna**: Muestra `"CISTERNA CON [nombre del artículo]"`
 - 📦 **Total disponible**: Cantidad total disponible del artículo en la cisterna
 
-![encabezado](./img/encabezado.png)
-
----
+![encabezado](./img/encabezado.webp)
 
 ### 📋 Columnas del Detalle
 
@@ -26,8 +41,6 @@ El reporte **"Detalle de Cisterna"** permite visualizar el historial completo de
 | 🔄 **Movimiento** | Tipo de operación realizada                              |
 | 🔢 **Cantidad**   | Cantidad del movimiento                                  |
 | 📈 **Saldo**      | Saldo acumulado después del movimiento                   |
-
----
 
 ## 🧭 Tipos de Movimientos
 
@@ -51,29 +64,6 @@ El reporte clasifica los movimientos en tres categorías con colores distintivos
 - 🖍️ **Texto**: Naranja oscuro `#FF8F00`
 - 🧾 **Descripción**: Ajustes **manuales de inventario**
 
----
-
-## ⚙️ Parámetros del Reporte
-
-Para generar el reporte correctamente, se deben completar los siguientes parámetros:
-
-![parametroarticuloid](./img/parametros.png)
-
-### 🔐 Parámetros Obligatorios
-
-- ⛽ **`Combustible`**: ID del artículo a consultar
-
-### 🧩 Parámetros Opcionales
-
-- 📅 **`fechaDesde`**: Fecha de inicio del período
-- 📅 **`fechaHasta`**: Fecha final del período
-- ↕️ **`Ordenar`**: Ascendente o Descendente (selección por desplegable)
-- 📄 **`Cantidad de filas`**: Número máximo de registros a mostrar (por defecto: 50).  
-  🔸 _No tiene un límite máximo o mínimo fijo._  
-  🔸 _Si se aplica un filtro por fecha, se mostrarán todos los movimientos correspondientes al rango seleccionado._
-
----
-
 ## 🧰 Funcionalidades Especiales
 
 ### 📆 Filtrado por Fechas
@@ -93,8 +83,6 @@ Para generar el reporte correctamente, se deben completar los siguientes paráme
 - Muestra el **saldo acumulado progresivo**
 - Actualiza saldos en tiempo real según el tipo de movimiento
 
----
-
 ## 📖 Interpretación de los Datos
 
 ### 📊 Lectura del Saldo Acumulado
@@ -108,8 +96,6 @@ Para generar el reporte correctamente, se deben completar los siguientes paráme
 - Ordenados cronológicamente
 - Cada fila muestra el impacto en el saldo
 - Referencia útil para rastrear el origen del movimiento
-
----
 
 ## ✅ Casos de Uso Comunes
 
@@ -131,8 +117,6 @@ Para generar el reporte correctamente, se deben completar los siguientes paráme
 - Identificación de tendencias
 - Optimización de niveles de stock
 
----
-
 ## 📌 Notas Importantes
 
 - Datos en tiempo real desde la base actual
@@ -140,8 +124,6 @@ Para generar el reporte correctamente, se deben completar los siguientes paráme
 - Fechas en formato 24 horas
 - Números con decimales cuando corresponda
 - Colores alternos por fila para mejor lectura
-
----
 
 ## 🛠️ Solución de Problemas Comunes
 
@@ -173,8 +155,6 @@ Las causas más comunes son:
 - 🛢️ El depósito/cisterna especificado no contiene el artículo
 - ⏳ Los movimientos fueron realizados fuera del período de 6 meses (si no especificó fechas)
 
----
-
 ### 2. ¿Qué significa cuando aparece "N/A" en la columna Referencia?
 
 **🅰️ Respuesta:**
@@ -183,8 +163,6 @@ Las causas más comunes son:
 - 🔁 Movimientos automáticos del sistema
 - 🧾 Ajustes masivos de inventario
 - 📂 Movimientos antiguos sin documentación completa
-
----
 
 ### 3. ¿Por qué el saldo mostrado no coincide con mi sistema de inventario?
 
@@ -196,8 +174,6 @@ Posibles causas:
 - 🧭 Verificar que esté consultando el depósito correcto
 - 📚 El cálculo considera todos los movimientos históricos, incluso anteriores al período consultado
 
----
-
 ### 4. ¿Cómo interpretar las cantidades negativas en el saldo?
 
 **🅰️ Respuesta:**
@@ -208,8 +184,6 @@ Un saldo negativo indica:
 - 🛒 Necesidad de reabastecimiento urgente
 - 📌 En algunos casos, puede indicar reservas o compromisos de entrega
 
----
-
 ### 5. ¿Puedo generar el reporte para múltiples artículos a la vez?
 
 **🅰️ Respuesta:**
@@ -218,16 +192,12 @@ No, este reporte está diseñado para consultar **un artículo específico**. Pa
 - 📄 Ejecutar el reporte individualmente para cada artículo
 - 🧑‍💼 Solicitar un reporte consolidado diferente al administrador del sistema
 
----
-
 ### 6. ¿Qué diferencia hay entre "Cantidad" y "Saldo"?
 
 **🅰️ Respuesta:**
 
 - 🔢 **Cantidad**: Valor del movimiento específico (positivo o negativo)
 - 💰 **Saldo**: Total acumulado luego de aplicar ese movimiento
-
----
 
 ### 7. ¿Por qué algunos movimientos aparecen en rojo, verde o amarillo?
 
@@ -238,8 +208,6 @@ Los colores indican el tipo de movimiento:
 - 🟢 **Verde (Descarga)**: Movimientos que aumentan el stock
 - 🟡 **Amarillo (Ajuste)**: Correcciones manuales de inventario
 
----
-
 ### 8. ¿Cómo puedo obtener más de 50 registros?
 
 **🅰️ Respuesta:**
@@ -247,8 +215,6 @@ Los colores indican el tipo de movimiento:
 - 📆 Si consulta fechas históricas (no el día actual), el límite se elimina automáticamente
 - ⚙️ Para el día actual, puede solicitar al administrador aumentar el parámetro `"limite"`
 - 🗓️ Considere usar rangos de fechas más específicos para optimizar la consulta
-
----
 
 ### 9. ¿El reporte muestra información en tiempo real?
 
@@ -258,8 +224,6 @@ Sí, el reporte consulta directamente la base de datos actual. Sin embargo:
 - ⏱️ Puede haber un pequeño retraso por procesamiento
 - 🕒 Movimientos muy recientes pueden tardar unos minutos en reflejarse
 - 🔁 La actualización depende de la frecuencia de sincronización del sistema
-
----
 
 ### 10. ¿Qué hago si el reporte tarda mucho en cargar?
 
@@ -271,8 +235,6 @@ Para mejorar el rendimiento:
 - 📆 Evite consultar períodos de más de 3 meses
 - 🕰️ Consulte durante horarios de menor actividad del sistema
 
----
-
 ### 11. ¿Puedo exportar los datos a Excel?
 
 **🅰️ Respuesta:**
@@ -282,8 +244,6 @@ Sí, dependiendo de la configuración del sistema:
 - 🧑‍💼 Solicite al administrador habilitar formatos adicionales (PDF, Excel, CSV)
 - 📑 También puede guardar el reporte como PDF y convertirlo posteriormente
 
----
-
 ### 12. ¿Qué significa el número que aparece en el encabezado junto al nombre de la cisterna?
 
 **🅰️ Respuesta:**
@@ -292,8 +252,6 @@ Es el **total disponible actual** del artículo en la cisterna. Este valor:
 - 🔄 Se calcula en tiempo real
 - 🛢️ Incluye todos los depósitos de la cisterna
 - 📅 Es independiente del período consultado en el detalle
-
----
 
 ### 13. ¿Por qué las fechas aparecen en formato 24 horas?
 
@@ -305,8 +263,6 @@ El formato 24 horas (`HH:MM`) ofrece:
 - 🌍 Estándar internacional en sistemas empresariales
 - 🧾 Mejor trazabilidad de movimientos por hora
 
----
-
 ### 14. ¿Puedo filtrar por tipo de movimiento específico?
 
 **🅰️ Respuesta:**
@@ -315,8 +271,6 @@ Este reporte **no incluye un filtro por tipo de movimiento**. Para obtener solo 
 - 👁️ Analice visualmente los colores en el reporte
 - 🧑‍💼 Solicite al administrador un reporte personalizado con ese filtro
 - 🛠️ Use herramientas externas para filtrar los datos exportados
-
----
 
 ### 15. ¿Qué debo hacer si encuentro un error en los datos?
 

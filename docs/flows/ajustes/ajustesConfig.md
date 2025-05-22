@@ -9,8 +9,6 @@ Los ajustes permiten corregir diferencias entre los montos reales y los registra
 
 📈 **Impacto:** Aumenta el saldo registrado.
 
-![flujo ajuste positivo](./img/positivo.png)
-
 ### 🔁 Pasos del flujo:
 
 1. Verificar el excedente (más dinero en caja o mayor saldo real).
