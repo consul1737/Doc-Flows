@@ -23,7 +23,7 @@ Para generar el reporte correctamente, se deben completar los siguientes paráme
   🔸 _No tiene un límite máximo o mínimo fijo._  
   🔸 _Si se aplica un filtro por fecha, se mostrarán todos los movimientos correspondientes al rango seleccionado._
 
-![parametroarticuloid](./img/parametros.webp)
+![parametroarticuloid](./img/param.webp)
 
 ### 🧱 Encabezado del Reporte
 
