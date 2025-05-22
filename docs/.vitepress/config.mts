@@ -102,11 +102,11 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
             },
             {
               text: "Sueldos",
-              link: "/reportes/jasper_report_doc/",
+              link: "/reportes/jasper_report_doc",
             },
             {
               text: "Cisterna",
-              link: "/reportes/CisternaTecnico/",
+              link: "/reportes/CisternaTecnico",
             },
           ],
         },
