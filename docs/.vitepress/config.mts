@@ -11,10 +11,11 @@ export default withMermaid(
         include: ["mermaid"],
       },
     },
-
     themeConfig: {
-      nav: [{ text: "Home", link: "/" }],
-
+      nav: [
+        { text: "Home", link: "/" },
+        { text: "Soporte", link: "https://surl.li/kmiuwb" },
+      ],
       sidebar: {
         "/reportes/": sidebarReportes(),
         "/flows/": sidebarFlows(),
@@ -119,7 +120,45 @@ function sidebarFlows(): DefaultTheme.SidebarItem[] {
     {
       text: "Flows",
       collapsed: false,
-      items: [{ text: "Inicio", link: "/" }],
+      items: [
+        { text: "Inicio", link: "/flows/" },
+        {
+          text: "Ajustes",
+          collapsed: true,
+          items: [
+            { text: "Ajustes", link: "/flows/ajustes/ajustes" },
+            { text: "Realizar Ajuste", link: "/flows/ajustes/realizarAjuste" },
+            {
+              text: "Ajustes Negativos",
+              collapsed: true,
+              items: [
+                {
+                  text: "Ajustes Negativo Caja",
+                  link: "/flows/ajustes/ajusteNegativoCaja",
+                },
+                {
+                  text: "Ajustes Negativo CtaCte",
+                  link: "/flows/ajustes/ajusteNegativoCtaCte",
+                },
+              ],
+            },
+            {
+              text: "Ajustes Positivos",
+              collapsed: true,
+              items: [
+                {
+                  text: "Ajustes Positivo Caja",
+                  link: "/flows/ajustes/ajustePositivoCaja",
+                },
+                {
+                  text: "Ajustes Positivo CtaCte",
+                  link: "/flows/ajustes/ajustePositivoCtaCte",
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
   ];
 }
