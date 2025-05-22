@@ -80,7 +80,11 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
             },
             {
               text: "Sueldos",
-              link: "/reportes/manual_usuario_rhsueldos/",
+              link: "/reportes/manual_usuario_rhsueldos",
+            },
+            {
+              text: "Cisterna",
+              link: "/reportes/CisternaUsuario",
             },
           ],
         },
@@ -99,6 +103,10 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
             {
               text: "Sueldos",
               link: "/reportes/jasper_report_doc/",
+            },
+            {
+              text: "Cisterna",
+              link: "/reportes/CisternaTecnico/",
             },
           ],
         },
@@ -126,7 +134,7 @@ function sidebarFlows(): DefaultTheme.SidebarItem[] {
           text: "Ajustes",
           collapsed: true,
           items: [
-            { text: "Ajustes", link: "/flows/ajustes/ajustes" },
+            { text: "Ajustes", link: "/flows/ajustes/ajuste" },
             { text: "Realizar Ajuste", link: "/flows/ajustes/realizarAjuste" },
             {
               text: "Ajustes Negativos",

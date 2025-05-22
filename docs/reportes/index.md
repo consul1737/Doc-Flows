@@ -10,6 +10,7 @@
 - ⏱️ [Control de tiempos / Tareas](ControlTiempo_Usuario)
 - 📚 [Cuentas Corrientes](CTACTEPROV)
 - 💼 [Sueldos](manual_usuario_rhsueldos)
+- ⛽ [Cisterna](CisternaUsuario)
 
 ### 🔍 Filtros Disponibles
 
