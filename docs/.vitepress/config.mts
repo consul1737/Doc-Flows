@@ -166,6 +166,16 @@ function sidebarFlows(): DefaultTheme.SidebarItem[] {
             },
           ],
         },
+        {
+          text: "Mejoras",
+          collapsed: true,
+          items: [
+            {
+              text: "Hallazgos",
+              link: "/flows/PM_Hallazgos/hallazgo",
+            },
+          ],
+        },
       ],
     },
   ];
