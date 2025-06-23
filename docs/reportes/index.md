@@ -4,13 +4,14 @@
 
 ### 📁 Secciones de Reportes
 
-- 📄 [Cheques](Cheques)
-- 📦 [Compras](COMPRAS_maestro)
-- 📑 [Remito Vs Compras](RemitosVsCompras)
-- ⏱️ [Control de tiempos / Tareas](ControlTiempo_Usuario)
-- 📚 [Cuentas Corrientes](CTACTEPROV)
-- 💼 [Sueldos](manual_usuario_rhsueldos)
 - ⛽ [Cisterna](CisternaUsuario)
+- 🪑 [Control de Muebles Etapas](controlDeMuebles.md)
+- ⏱️ [Control de tiempos / Tareas](ControlTiempo_Usuario)
+- 📦 [Compras](COMPRAS_maestro)
+- 📚 [Cuentas Corrientes](CTACTEPROV)
+- 📄 [Cheques](Cheques)
+- 💼 [Sueldos](manual_usuario_rhsueldos)
+- 📑 [Remito Vs Compras](RemitosVsCompras)
 
 ### 🔍 Filtros Disponibles
 

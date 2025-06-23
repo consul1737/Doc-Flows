@@ -10,6 +10,8 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "pnpm": "^10.10.0"
+    "@tailwindcss/vite": "^4.1.10",
+    "pnpm": "^10.10.0",
+    "tailwindcss": "^4.1.10"
   }
 }

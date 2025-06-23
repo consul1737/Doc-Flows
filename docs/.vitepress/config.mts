@@ -1,15 +1,18 @@
 import { defineConfig, type DefaultTheme } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
+import tailwindcss from "@tailwindcss/vite";
 
 export default withMermaid(
   defineConfig({
     base: "/Doc-Flows/",
     title: "Flows Manager",
     description: "Prueba",
+
     vite: {
       optimizeDeps: {
         include: ["mermaid"],
       },
+      plugins: [tailwindcss()],
     },
     themeConfig: {
       nav: [
@@ -68,6 +71,10 @@ function sidebarReportes(): DefaultTheme.SidebarItem[] {
             {
               text: "Compras",
               link: "/reportes/COMPRAS_maestro",
+            },
+            {
+              text: "Producción",
+              link: "/reportes/controlDeMuebles",
             },
             { text: "RemitosVSCompras", link: "/reportes/RemitosVsCompras" },
             {
