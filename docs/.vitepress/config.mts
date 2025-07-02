@@ -142,34 +142,13 @@ function sidebarFlows(): DefaultTheme.SidebarItem[] {
           collapsed: true,
           items: [
             { text: "Ajustes", link: "/flows/ajustes/ajuste" },
-            { text: "Realizar Ajuste", link: "/flows/ajustes/realizarAjuste" },
             {
-              text: "Ajustes Negativos",
-              collapsed: true,
-              items: [
-                {
-                  text: "Ajustes Negativo Caja",
-                  link: "/flows/ajustes/ajusteNegativoCaja",
-                },
-                {
-                  text: "Ajustes Negativo CtaCte",
-                  link: "/flows/ajustes/ajusteNegativoCtaCte",
-                },
-              ],
+              text: "Realizar Ajuste",
+              link: "/flows/ajustes/50301RealizarAjuste",
             },
             {
-              text: "Ajustes Positivos",
-              collapsed: true,
-              items: [
-                {
-                  text: "Ajustes Positivo Caja",
-                  link: "/flows/ajustes/ajustePositivoCaja",
-                },
-                {
-                  text: "Ajustes Positivo CtaCte",
-                  link: "/flows/ajustes/ajustePositivoCtaCte",
-                },
-              ],
+              text: "Ajustes Positivos o Negativos",
+              link: "/flows/ajustes/AjustePosyNeg/",
             },
           ],
         },

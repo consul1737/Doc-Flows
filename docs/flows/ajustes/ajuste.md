@@ -16,6 +16,9 @@ Descripción: Pantalla inicial para definir el tipo de ajuste a realizar si es p
 
 ![img2](./img/img2.webp)
 
+- [Crear Ajuste](#nuevo-ajuste)
+- [Abrir los ajustes](#abrir-los-ajustes)
+
 ### Abrir los ajustes
 
 Una vez realices click se desplegara hacia abajo los diferentes instancias del mismo ahi podrás hacer click en donde te muestra la cantidad de `rojos`
@@ -32,4 +35,4 @@ Puede editar la vista de la tabla seleccionando las diferentes colomnas, puede h
 
 ### Nuevo Ajuste
 
-#### **50-3-01 Realizar ajuste**
+Una vez hagas click para crear un nuevo registro te dirigira a la actividad inicial.
